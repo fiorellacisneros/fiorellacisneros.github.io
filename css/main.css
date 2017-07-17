@@ -246,6 +246,9 @@ h3 {
         width: 20px;
     }
 }
+.cont-thnks .caption{
+    top: 50%;
+}
 footer{
     background-color: #333;
     padding: 20px;
