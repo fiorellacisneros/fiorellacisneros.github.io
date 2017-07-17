@@ -8,6 +8,7 @@ body, html {
 ul{
     list-style: none;
 }
+/* PARALLAX */
 .bgimg-1,
 .bgimg-2,
 .bgimg-3 {
@@ -23,19 +24,27 @@ ul{
     min-height: 100%;
 }
 .bgimg-2{
-    background-image: url(../assets/img/img1.jpg);
+    background-image: url(../assets/img/img6.jpeg);
     min-height: 400px;
 }
 .bgimg-3{
     background-image: url(../assets/img/img3.jpeg);
     min-height: 400px;
 }
+@keyframes fadeIn{
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
 .caption {
     position: absolute;
     left: 0;
-    top: 40%;
+    top: 30%;
     width: 100%;
+    opacity: 0;
     text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 .caption span.border {
     background-color: #111;
@@ -43,8 +52,25 @@ ul{
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
+    font-size:25px;
+    color: #f7f7f7;
+}
+.bgimg-2 .caption{
+    top: 43%;
+}
+@media (min-width: 768px){
+    .navbar-collapse{
+        float: right;
+    }
+    .navbar{
+        position: fixed;
+        z-index: 5;
+    }
 }
 @media (max-width: 768px){
+    .caption{
+        top: 40%;
+    }
     .caption span.border {
         padding: 10px;
         font-size: 16px;
@@ -63,58 +89,6 @@ h3 {
         min-height: 350px;
     }
 
-}
-/* SOCIAL */
-.cont-social{
-    position: absolute;
-    left: 0;
-    top: 56%;
-    width: 100%;
-    text-align: center;
-}
-.cont-social li{
-    display: inline-block;
-    height: 5.35em;
-    line-height: 5.885em;
-    position: relative;
-    top: 0;
-    width: 5.35em;
-    border: 2px solid white;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-.cont-social li > a{
-    text-decoration: none;
-}
-/* COLORS ICONS */
-.linkedin:hover{
-    background-color: #0077B5;
-    transform: translate3d(0,0.2em,0);
-}
-.github:hover{
-    background-color: #24292e;
-    transform: translate3d(0,0.2em,0);
-}
-.facebook:hover{
-    background-color: #3b5998;
-    transform: translate3d(0,0.2em,0);
-}
-.twitter:hover{
-    background-color: #55acee;
-    transform: translate3d(0,0.2em,0);
-}
-.icon-linkedin2, 
-.icon-github,
-.icon-facebook,
-.icon-twitter{
-    font-size: 30px;
-    color: white;
-}
-
-.cont-social a:active, a:hover {
-    outline: none;
-    text-decoration: none;
-    color: white;
 }
 /* NAVBAR */
 .navbar{
@@ -143,8 +117,103 @@ h3 {
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #404040;
 }
-.navbar-default .navbar-toggle {
-    border-color: #404040;
+.navbar-default {
+    border: none;
+}
+/* SOCIAL */
+.cont-social{
+    position: absolute;
+    left: 0;
+    top: 46%;
+    width: 100%;
+    text-align: center;
+}
+.cont-social li{
+    display: inline-block;
+    height: 5.35em;
+    line-height: 5.885em;
+    position: relative;
+    top: 0;
+    width: 5.35em;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.cont-social li > a{
+    text-decoration: none;
+}
+/* COLORS ICONS */
+.linkedin:hover{
+    background-color: #0077B5;
+}
+.github:hover{
+    background-color: #24292e;
+}
+.facebook:hover{
+    background-color: #3b5998;
+}
+.twitter:hover{
+    background-color: #55acee;
+}
+.icon-linkedin2, 
+.icon-github,
+.icon-facebook,
+.icon-twitter{
+    font-size: 30px;
+    color: white;
+}
+
+.cont-social a:active, a:hover {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+/* ABOUT ME */
+.cont-aboutme{
+    color: white;
+    background-color: #797775;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+    min-height: 500px;
+}
+.cont-aboutme h3{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: wheat;
+    font-weight: 700;
+}
+.cont-imgaboutme{
+    width: 50%;
+}
+.cont-imgaboutme img{
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.cont-reconocimientos img{
+    width: 150px;
+    padding-top: 20px;
+    margin-right: 20px;
+    transition: all .25s ease;
+}
+.cont-reconocimientos img:hover{
+    transform: rotate(360deg);
+}
+@media (max-width: 768px){
+    .cont-aboutme{
+        padding: 20px;
+    }
+    .cont-aboutme p{
+        margin-top: 20px;
+    }
+    .cont-reconocimientos{
+        text-align: center;
+    }
+    .cont-reconocimientos img{
+        width: 50px;
+        margin-top: 10px;
+        margin: 0;
+    }
 }
 .cont-skills .img-responsive{
     width: 50px;
@@ -160,6 +229,22 @@ h3 {
 .cont-portfolio .img-responsive{
     width: 400px;
     height: 200px;
+}
+.cont-portfolio img:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+@media (max-width: 768px){
+    .cont-portfolio{
+        min-height: 731px;
+    }
+    .cont-proyects{
+        padding: 20px !important;
+    }
+    .cont-portfolio img{
+        margin-top: 20px;
+        width: 20px;
+    }
 }
 footer{
     background-color: #333;
