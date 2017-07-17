@@ -1,1 +1,3 @@
-$("img.lazy").lazyload();
+AOS.init({
+    disable: window.innerWidth < 1024
+});

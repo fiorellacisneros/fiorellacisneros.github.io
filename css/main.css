@@ -8,6 +8,12 @@ body, html {
 ul{
     list-style: none;
 }
+.hidden{
+    opacity:0;
+}
+.visible{
+    opacity:1;
+}
 /* PARALLAX */
 .bgimg-1,
 .bgimg-2,
@@ -25,11 +31,11 @@ ul{
 }
 .bgimg-2{
     background-image: url(../assets/img/img6.jpeg);
-    min-height: 400px;
+    min-height: 200px;
 }
 .bgimg-3{
     background-image: url(../assets/img/img3.jpeg);
-    min-height: 400px;
+    min-height: 200px;
 }
 @keyframes fadeIn{
     0% { opacity: 0 }
@@ -162,7 +168,6 @@ h3 {
     font-size: 30px;
     color: white;
 }
-
 .cont-social a:active, a:hover {
     outline: none;
     text-decoration: none;
@@ -170,15 +175,15 @@ h3 {
 }
 /* ABOUT ME */
 .cont-aboutme{
-    color: white;
-    background-color: #797775;
+    color: white; 
+    background-color: rgb(126, 117, 115);
     text-align: center;
     padding: 50px 80px;
     text-align: justify;
-    min-height: 500px;
+    min-height: 510px;
 }
 .cont-aboutme h3{
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 40px;
     color: wheat;
     font-weight: 700;
@@ -187,7 +192,7 @@ h3 {
     width: 50%;
 }
 .cont-imgaboutme img{
-    border-radius: 50%;
+    clip-path: circle(127px at 136px);
     border: 3px solid white;
 }
 .cont-reconocimientos img{
@@ -200,6 +205,9 @@ h3 {
     transform: rotate(360deg);
 }
 @media (max-width: 768px){
+    .cont-imgaboutme img{
+        clip-path: circle(63px at 71px);
+    }
     .cont-aboutme{
         padding: 20px;
     }
@@ -222,10 +230,19 @@ h3 {
     background-color: rgba(40, 46, 52, 0.08);
     text-align: center;
     padding: 50px 80px;
-    min-height: 400px;
+    min-height: 470px;    
 }
 .cont-skills .webdesign:hover{
     background-color: coral;
+}
+.cont-skills h2{
+    letter-spacing: 5px;
+}
+.cont-skills ul{
+    padding: 0;
+}
+.cont-skills ul li{
+    line-height: 30px;
 }
 .cont-portfolio .img-responsive{
     width: 400px;
@@ -234,6 +251,9 @@ h3 {
 .cont-portfolio img:hover{
     transform: scale(1.1);
     transition: all .5s;
+}
+#portfolio .caption{
+    top: 36%;
 }
 @media (max-width: 768px){
     .cont-portfolio{
