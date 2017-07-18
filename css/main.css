@@ -134,7 +134,7 @@ h3 {
     width: 100%;
     text-align: center;
 }
-.cont-social li{
+.cont-social li, .cont-othersocial li{
     display: inline-block;
     height: 5.35em;
     line-height: 5.885em;
@@ -145,7 +145,7 @@ h3 {
     border-radius: 50%;
     margin-right: 20px;
 }
-.cont-social li > a{
+.cont-social li > a, .cont-othersocial li > a{
     text-decoration: none;
 }
 /* COLORS ICONS */
@@ -189,11 +189,12 @@ h3 {
     font-weight: 700;
 }
 .cont-imgaboutme{
-    width: 50%;
+    width: 100%;
 }
 .cont-imgaboutme img{
-    clip-path: circle(77px at 85px);
-    border: 3px solid white;
+    clip-path: circle(112px at 114px);
+    margin-left: 52px;
+    margin-top: 26px;
 }
 .cont-reconocimientos img{
     width: 150px;
@@ -206,7 +207,9 @@ h3 {
 }
 @media (max-width: 768px){
     .cont-imgaboutme img{
-        clip-path: circle(56px at 67px);
+        clip-path: circle(101px at 117px);
+        margin-left: 14px;
+        margin-top: 0;
     }
     .cont-aboutme{
         padding: 20px;
@@ -218,8 +221,7 @@ h3 {
         text-align: center;
     }
     .cont-reconocimientos img{
-        width: 50px;
-        margin-top: 10px;
+        width: 80px;
         margin: 0;
     }
 }
@@ -274,7 +276,19 @@ h3 {
     }
 }
 .cont-thnks .caption{
-    top: 50%;
+    top: 45%;
+}
+.cont-thnks .img-responsive{
+    max-width: 69%;
+    margin-left: 14px;
+    margin-top: 14px;
+}
+.cont-othersocial{
+    top: 55%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 footer{
     background-color: #333;
