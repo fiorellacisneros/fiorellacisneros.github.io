@@ -184,7 +184,7 @@ h3 {
 }
 .cont-aboutme h3{
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: wheat;
     font-weight: 700;
 }
@@ -192,7 +192,7 @@ h3 {
     width: 50%;
 }
 .cont-imgaboutme img{
-    clip-path: circle(127px at 136px);
+    clip-path: circle(77px at 85px);
     border: 3px solid white;
 }
 .cont-reconocimientos img{
@@ -206,7 +206,7 @@ h3 {
 }
 @media (max-width: 768px){
     .cont-imgaboutme img{
-        clip-path: circle(63px at 71px);
+        clip-path: circle(56px at 67px);
     }
     .cont-aboutme{
         padding: 20px;
@@ -230,9 +230,15 @@ h3 {
     background-color: rgba(40, 46, 52, 0.08);
     text-align: center;
     padding: 50px 80px;
-    min-height: 470px;    
+    min-height: 490px;    
 }
-.cont-skills .webdesign:hover{
+@media (max-width: 768px){
+    .cont-skills{
+        min-height: 812px;
+        padding: 10px;
+    }
+}
+.cont-skills .webdesign, .cont-skills .otherlang{
     background-color: coral;
 }
 .cont-skills h2{
