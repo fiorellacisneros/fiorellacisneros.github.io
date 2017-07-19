@@ -50,8 +50,7 @@
                 </ul>
             </div>
         </div>
-        <div id="aboutme" class="cont-aboutme">
-            <h3 style="text-align:center;">ABOUT ME</h3>
+        <section id="aboutme" class="cont-aboutme">
             <div class="container">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="center-block cont-imgaboutme">
@@ -59,7 +58,8 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
-                    <p data-aos="fade-left" style="font-size: 18px; line-height: 24px;">Hola, soy Fiorella Cisneros, Ingeniera de Sistemas y actualmente egresada de Laboratoria como <strong>Front-end Developer Jr.</strong> Inmersa en el mundo tecnológico con especial interés en el desarrollo de productos para dispositivos móviles. Me instruyo con nuevos conocimientos, a través de cursos en línea; intelectualmente competente, con habilidades y aptitudes básicas necesarias para asumir el reto de trabajar en la <strong>carrera del futuro.</strong></p><br>
+                    <h3>ABOUT ME</h3>
+                    <p data-aos="fade-left" style="font-size: 18px; line-height: 24px;">Hola, soy Fiorella Cisneros, Ingeniera de Sistemas y actualmente egresada de Laboratoria como <strong>Front-end Developer Jr.,</strong> inmersa en el mundo tecnológico con especial interés en el desarrollo de productos para dispositivos móviles. Me instruyo con nuevos conocimientos, a través de cursos en línea; intelectualmente competente, con habilidades y aptitudes necesarias para asumir el reto de trabajar en la <strong>carrera del futuro.</strong></p><br>
                     <h3>Mis reconocimientos en Laboratoria</h3>
                     <div class="img-responsive cont-reconocimientos">
                         <img src="assets/img/reconocimientos/5mejores.png" alt="5mejores">
@@ -68,13 +68,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <div id="skills" class="bgimg-2">
             <div class="caption">
                 <span class="border" style="background-color:black;font-size:25px; font-weight: 800; color: #f7f7f7;">SKILLS</span>
             </div>
         </div>
-        <div style="position:relative;">
+        <section style="position:relative;">
             <div class="cont-skills center-block">
                 <div data-aos="fade-down" class="post col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <img src="assets/img/content.svg" title="Web Design" class="webdesign" width="64" height="64">
@@ -104,25 +104,32 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
         <div id="portfolio" class="bgimg-3">
             <div class="caption">
                 <span class="border">PORTFOLIO</span>
             </div>
         </div>
-        <div class="cont-portfolio" style="position:relative;">
-            <div  class="cont-proyects" style="color:#ddd;background-color:white;text-align:center;padding:50px 80px;text-align: justify; height: 300px">    
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <a href="https://fiorellacisneros.github.io/FoundationProject/"><img class="img-responsive" src="assets/img/fab.png" alt=""></a>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <a href="https://miriampc.github.io/Lyft-Desktop/"><img class="img-responsive" src="assets/img/lyft.jpg" alt=""></a>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <a href="https://proyectofinalsprint5.herokuapp.com/"><img class="img-responsive" src="assets/img/yape.jpg" alt=""></a>
-                </div>
+        <section class="cont-portfolio">
+            <div class="container">
+                <section class="row">
+                    <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <a href="#" class="image">
+                            <img class="img-responsive" src="assets/img/fab.png" alt="fab" width="100%">
+                        </a>
+                        <h3 class="txt-h3">PROYECTO FAB</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas adipisci eaque delectus eius, hic quod reprehenderit excepturi, rerum libero eligendi harum dolorum iure omnis, porro ipsa, unde? Voluptatum, atque, fugiat.</p>
+                    </article>
+                    <article class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <a href="#" class="image">
+                            <img src="assets/img/lyft.jpg" alt="fab" width="100%">
+                        </a>
+                        <h3 class="txt-h3">PROYECTO LYFT</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas adipisci eaque delectus eius, hic quod reprehenderit excepturi, rerum libero eligendi harum dolorum iure omnis, porro ipsa, unde? Voluptatum, atque, fugiat.</p>
+                    </article>
+                </section>
             </div>
-        </div>
+        </section>
         <div class="hidden-xs bgimg-1 cont-thnks">
             <div class="caption">
                 <span class="border">THANKS FOR YOUR VISIT</span>
@@ -134,7 +141,10 @@
                 </ul>
             </div>
         </div>
-        <footer>
+        <footer class="center-block"> 
+            <a class="up-arrow" href="#">
+                <span class="hidden-xs glyphicon glyphicon-chevron-up" style="color:white;"></span>
+            </a><br>
             Created by Fiorella Cisneros Romero / 2017 / Lima-Perú
         </footer>
         <script src="js/jquery-3.2.1.min.js"></script>

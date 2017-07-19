@@ -26,15 +26,15 @@ ul{
     background-size: cover;
 }
 .bgimg-1{
-    background-image: url(../assets/img/img4.jpeg);
+    background-image: url(../assets/img/img4-min.jpeg);
     min-height: 100%;
 }
 .bgimg-2{
-    background-image: url(../assets/img/img6.jpeg);
+    background-image: url(../assets/img/img6-min.jpeg);
     min-height: 200px;
 }
 .bgimg-3{
-    background-image: url(../assets/img/img3.jpeg);
+    background-image: url(../assets/img/img3-min.jpeg);
     min-height: 200px;
 }
 @keyframes fadeIn{
@@ -197,9 +197,6 @@ h3 {
     margin-right: auto;
     margin-left: auto;
 }
-.cont-reconocimientos{
-    text-align: center;
-}
 .cont-reconocimientos img{
     width: 99px;
     padding-top: 8px;
@@ -257,28 +254,12 @@ h3 {
 .cont-skills ul li{
     line-height: 30px;
 }
-.cont-portfolio .img-responsive{
-    width: 400px;
-    height: 200px;
+.cont-portfolio{
+    padding-top: 33px;
+    padding-bottom: 33px;
 }
-.cont-portfolio img:hover{
-    transform: scale(1.1);
-    transition: all .5s;
-}
-#portfolio .caption{
-    top: 36%;
-}
-@media (max-width: 768px){
-    .cont-portfolio{
-        min-height: 731px;
-    }
-    .cont-proyects{
-        padding: 20px !important;
-    }
-    .cont-portfolio img{
-        margin-top: 20px;
-        width: 20px;
-    }
+.cont-portfolio img:nth-child(1){
+    height: 312px;
 }
 .cont-thnks .caption{
     top: 45%;
@@ -300,4 +281,8 @@ footer{
     padding: 20px;
     text-align: center;
     color: white;
+}
+footer a:focus, footer a:hover, footer a:visited{
+    color: white;
+    text-decoration: none;
 }
