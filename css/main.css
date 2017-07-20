@@ -219,6 +219,7 @@ h3 {
 	}
 	.cont-aboutme p{
 		margin-top: 20px;
+		font-size: 14px !important;
 	}
 	.cont-reconocimientos{
 		text-align: center;
@@ -241,6 +242,9 @@ h3 {
 		min-height: 812px;
 		padding: 10px;
 	}
+	.cont-portfolio img{
+		height: 189px;
+	}
 }
 .cont-skills .webdesign, .cont-skills .otherlang{
 	background-color: coral;
@@ -262,8 +266,21 @@ h3 {
 .cont-portfolio article{
 	padding-bottom: 20px;
 }
-.cont-portfolio img:nth-child(1){
+.cont-portfolio article .buttons button > a{
+	text-decoration: none;
+	color: #130e0e;
+}
+.cont-portfolio img{
 	height: 312px;
+}
+@media (max-width: 768px){
+	.cont-portfolio img{
+		height: 189px;
+	}
+}
+.cont-portfolio img:hover{
+	transform: scale(1.1);
+	transition: all .5s;
 }
 .cont-thnks .caption{
 	top: 45%;
